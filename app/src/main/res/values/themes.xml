@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InstaleapChallenge" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
+        <item name="colorOnPrimary">@color/gray</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="RatingBar" parent="@style/Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/stars_blue</item>
+        <item name="colorControlActivated">@color/stars_blue</item>
+    </style>
+
+    <style name="TextAppearanceTabOpinions" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="ToolbarTitleTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>  <!-- Ensure your color is defined in colors.xml -->
+    </style>
+
+</resources>
