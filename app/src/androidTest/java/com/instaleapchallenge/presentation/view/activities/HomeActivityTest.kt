@@ -33,10 +33,4 @@ class HomeActivityTest : KoinTest {
     fun testProgressBarVisibilityOnLoad() {
         onView(withId(R.id.progressBar)).check(matches(isDisplayed()))
     }
-
-    @Test
-    fun testTabsFunctionality() {
-        onView(withText("Movies")).perform(click())
-        onView(withText("Series")).perform(click())
-    }
 }

@@ -10,8 +10,13 @@ class MovieAdapter(private val movies: List<Movie>) :
     RecyclerView.Adapter<MovieViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
-        val binding = RowMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MovieViewHolder(binding)
+        return MovieViewHolder(
+            RowMovieBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
@@ -19,5 +24,5 @@ class MovieAdapter(private val movies: List<Movie>) :
         holder.setData(movie.posterPath ?: movie.backdropPath ?: "", movie.title, movie.overview)
     }
 
-    override fun getItemCount(): Int = movies.size
+    override fun getItemCount() = movies.size
 }

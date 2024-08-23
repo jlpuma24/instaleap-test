@@ -1,8 +1,5 @@
 <resources>
-    <string name="app_name">InstaleapChallenge</string>
-    <string name="all">All</string>
-    <string name="series">Series</string>
-    <string name="movies">Movies</string>
-    <string name="title">Nextfleap</string>
+    <string name="app_name">Instaflix</string>
+    <string name="title">Instaflix</string>
     <string name="error">Existió un error al momento de realizar la petición, por favor intenta nuevamente</string>
 </resources>
