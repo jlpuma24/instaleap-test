@@ -29,9 +29,4 @@ class InstaleapChallengeApplication: MultiDexApplication() {
         super.attachBaseContext(base)
         MultiDex.install(this)
     }
-
-    companion object {
-        var instance: InstaleapChallengeApplication? = null
-            private set
-    }
 }
